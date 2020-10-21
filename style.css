@@ -1,0 +1,172 @@
+/* * {
+    border: 1px solid pink;
+} */
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    min-height: 800px;
+    margin: 0 auto;
+    background-image: linear-gradient(-75deg, white, rgb(123, 235, 123));
+    }
+
+
+/* NAVBAR */
+    .nav {
+        margin: 0px;
+        padding:10px 10px 10px 20px;
+    }
+
+    .nav li {
+        display: inline-block;
+        vertical-align: bottom;
+        color:black;
+        background-color: white;
+        border: 1px black solid;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px 20px;
+        margin: 5px;
+        height: 15px;
+        transition: all 0.4s ease 0s;
+    }
+
+    li:hover {
+        color: #ffffff;
+        background: #f6b93b;
+        border-color: #f6b93b;
+        transition: all 0.4s ease 0s;
+        }
+
+    .nav img {
+        width: 125px;
+        margin:10px 250px 10px 0px;
+        border: 0px;
+        vertical-align: middle;
+        transition: transform 1s;
+    }
+
+    img:hover {
+        transform: rotate(1080deg);
+    }
+
+
+/* MAIN */
+.main-content {
+    min-height: 300px;
+    background-color: white;
+    padding: 10px;
+    border: 10px solid rgba(0, 128, 0, 0.598);
+}
+
+.main-content img {
+    display: flex;
+    width: 100%;
+    filter: sepia(60%);
+}
+
+/* CARDS */
+.biography {
+    margin-top: 15px;
+}
+
+.biography .turtles .row {
+    display: flex;
+    justify-content: space-between;
+    width: 1014px;
+    border: black 2px solid;
+    margin: 5px;
+    background-image: linear-gradient(-90deg, rgb(229, 255, 0), rgb(121, 213, 132))
+}
+
+.biography .turtles img {
+    width: 30%;
+    mix-blend-mode: multiply;
+}
+
+.row {
+    transition: all .2s ease-in-out;
+}
+
+.row:hover {
+    transform: scale(1.1);
+}
+
+.row h1 {
+    margin: 0px 75px 0px 10px;
+    font-family: 'Permanent Marker';
+    font-size: 50px;
+}
+
+.row p {
+    display: inline-block;
+    text-align: center;
+    width: 475px;
+    margin:20px;
+}
+
+.leo {
+    color: rgb(95, 95, 193);
+    text-shadow: 4px 4px 6px papayawhip;
+}
+
+.mikey{
+    color: rgb(233, 164, 35);
+    text-shadow: 4px 4px 6px papayawhip;
+}
+
+.raph {
+    color: rgb(226, 101, 101);
+    text-shadow: 4px 4px 6px papayawhip;
+}
+
+.don {
+    color: rgb(223, 23, 223);
+    text-shadow: 4px 4px 6px papayawhip;
+}
+
+/* Fun Zone */
+.funzone {
+    min-height: 300px;
+    width: 100%;
+}
+
+.cards {
+    display: inline-block;
+    vertical-align: top;
+    width: 31.5%;
+    min-height: 275px;
+    border: white 2px solid;
+    margin: 6px;
+    background-image: linear-gradient(-90deg, rgb(255, 204, 0), rgb(240, 236, 228))
+}
+
+.cards h2 {
+    display: block;
+    font-family: 'Permanent Marker';
+    color: white;
+    text-shadow: 4px 4px 6px gray;
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+/* FOOTER */
+.fa {
+    padding: 10px;
+    width: 175px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}

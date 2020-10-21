@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio Project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                // alert('you are now working with Jquery');
+
+                $('img').hover(function(){
+                    var pose = $(this).attr('src');
+                    var action = $(this).attr('data-alt-src');
+                    $(this).attr('src', action);
+                    $(this).attr('data-alt-src', pose);
+                })
+
+                $(".main-content").click(function() {
+                $(".main-content").toggle("slow", "linear");
+            })
+        })
+
+        </script>
+    </head>
+
+    <body>
+        <!-- MAIN CONTAINER -->
+        <div class="container">
+
+            <!-- NAVBAR -->
+            <ul class="nav">
+                <img src="logo2.png" alt="logo">
+                <li>Home</li>
+                <li>Games</li>
+                <li>History</li>
+                <li>Episodes</li>
+                <li>Merch</li>
+            </ul>
+
+            <!-- MAIN -->
+            <div class="main-content">
+                <img id="squad"img src="squad2.jpeg" alt="squad">    
+            </div>
+
+            <div class="biography">
+                <div class="turtles">
+                    <div class="row">
+                        <img src="leo1.jpg" data-alt-src="leo2.jpg">
+                        <h1 class="leo">Leo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam, ab blanditiis modi voluptatum tempora harum obcaecati 
+                        impedit, nulla, dicta rem quos adipisci dolore eius amet magnam? 
+                        Error sit iure pariatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam, ab blanditiis modi voluptatum tempora harum obcaecati 
+                        impedit, nulla, dicta rem quos adipisci dolore eius amet magnam? 
+                        Error sit iure pariatur.</p>
+                    </div>
+
+                    <div class="row">
+                        <img src="michael1.jpg" data-alt-src="michael2.png">
+                        <h1 class="mikey">Mikey</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam, ab blanditiis modi voluptatum tempora harum obcaecati 
+                        impedit, nulla, dicta rem quos adipisci dolore eius amet magnam? 
+                        Error sit iure pariatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam, ab blanditiis modi voluptatum tempora harum obcaecati 
+                        impedit, nulla, dicta rem quos adipisci dolore eius amet magnam? 
+                        Error sit iure pariatur.</p>
+                    </div>
+
+                    <div class="row">
+                        <img src="raph1.png" data-alt-src="raph2.jpg">
+                        <h1 class="raph">Raph</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam, ab blanditiis modi voluptatum tempora harum obcaecati 
+                        impedit, nulla, dicta rem quos adipisci dolore eius amet magnam? 
+                        Error sit iure pariaturLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam, ab blanditiis modi voluptatum tempora harum obcaecati 
+                        impedit, nulla, dicta rem quos adipisci dolore eius amet magnam? 
+                        Error sit iure pariatur..</p>
+                    </div>
+
+                    <div class="row">
+                        <img src="don1.jpg" data-alt-src="don2.jpg">
+                        <h1 class="don">Donnie</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam, ab blanditiis modi voluptatum tempora harum obcaecati 
+                        impedit, nulla, dicta rem quos adipisci dolore eius amet magnam? 
+                        Error sit iure pariaturLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam, ab blanditiis modi voluptatum tempora harum obcaecati 
+                        impedit, nulla, dicta rem quos adipisci dolore eius amet magnam? 
+                        Error sit iure pariatur..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="funzone">
+                <div class="cards">
+                    <h2>Trivia</h2>
+                    <img src="trivia.jpg" alt="trivia">
+                </div>
+                    
+                <div class="cards">
+                    <h2>Chat with Ninja Turtles</h2>
+                    <img src="chat.png" alt="chat with turtles">
+                </div>
+
+                <div class="cards">
+                    <h2>Fan art</h2>
+                    <img src="fan.jpg" alt="fan art">
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </footer>
+        </div>
+
+    </body>
+</html>
